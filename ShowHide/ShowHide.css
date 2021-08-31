@@ -1,0 +1,37 @@
+#textDiv{
+    display:inline-block;
+    color:rgb(243, 69, 69);
+    text-align: center;
+    border: 2px solid rgb(243, 69, 69);
+    border-radius: 10px;
+    padding:50px;
+}
+#text{
+    display:inline-block;
+    color:rgb(243, 69, 69);
+    text-align: center;
+    border: 2px solid rgb(243, 69, 69);
+    border-radius: 10px;
+    padding:50px;
+}
+#changeTextField{
+    border:2px solid rgb(243, 69, 69);
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-bottom:10px;
+}
+
+#hideButton, #showButton, #toggleButton
+,#fadeInButton, #fadeOutButton
+,#delayFadeInButton, #delayFadeOutButton, #changeTextButton
+,#yellowBackgroundButton,#blueBackgroundButton{
+
+    color:white;
+    background-color: rgb(243, 69, 69);
+    border:2px solid white;
+    border-radius: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}

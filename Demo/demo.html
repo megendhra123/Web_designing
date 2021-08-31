@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Demo 1</title>
+        <link rel="stylesheet" href="demo.css">
+        <script  src="demo.js"></script>
+    </head>
+    <body>
+    <form name="form1" method="POST" onsubmit="return formValidation()">
+        <div id="center-box">
+            <h1>Login</h1>
+            <table>
+                <tr>
+                    <td id="userNameLabel">User Name : *</td><td><input type="text" name="userName" id="userNameTextField" required></td>
+                </tr>
+                <tr>
+                    <td id="passwordLabel">Password : *</td><td><input type="password" name="password" id="passwordTextField" min="8" max="12" required></td>
+                </tr>
+                <tr> 
+                    <td></td><td><input type="submit" value="Login" name="loginButton" id="submitButton"></td>
+                </tr>
+            </table>
+        </div>
+    </form>
+    </body>
+</html>
