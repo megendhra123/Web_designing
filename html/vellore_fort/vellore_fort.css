@@ -1,0 +1,19 @@
+body{
+    background-color: #faeb89 ;
+}
+#heading{
+    background-color: #fceb77;
+    color: black;
+    margin-top: auto;
+    text-align: center;
+    position: fixed;
+    top:0;
+    width:100%;
+}
+p{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 14pt;
+    line-height: 50px;
+    margin-left:5%;
+    margin-right:5%;
+}

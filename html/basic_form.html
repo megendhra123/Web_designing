@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0  ">
+    <title>form</title>
+    <style>
+        body{
+        background-color:#fff6c2;
+        }
+        .textbox{
+        padding-top:10px;
+        }
+        .titles{
+        font-size:12pt;
+        }
+        fieldset{
+        display:inline-block;
+        position:absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%,-50%);
+         padding-left:40px;
+         padding-right:80px;
+        }
+    </style>
+</head>
+<body>
+<form action="../../ShowHide/ShowHide.html" name="form" method="post" >
+    <fieldset>
+        <legend>Registration</legend>
+<table>
+    <tr>
+        <td class="textbox">
+            <label style="color:red">*</label><label for="firstNameField">First name :</label><br>
+    <input type="text"
+           id="firstNameField"
+           pattern="[A-Za-z]{2,}"
+           title="only characters allowed"
+           required>
+        </td>
+    </tr>
+    <tr>
+        <td  class="textbox">
+            <label style="color:red">*</label ><label for= "lastNameField">Last name :</label><br>
+    <input type="text"
+           id="lastNameField"
+           pattern="[A-Za-z]{2,}"
+           title="only characters allowed"
+           required >
+        </td>
+    </tr>
+    <tr>
+        <td  class="textbox">
+            <label style="color:red">*</label><label for="userNameField">User name :</label><br>
+    <input type="text"
+           id="userNameField"
+           pattern="[A-Za-z0-9]{2,}"
+           title="only characters allowed"
+           required >
+        </td>
+    </tr>
+    <tr>
+        <td  class="textbox">
+            <label style="color:red">*</label><label for="passwordField">Password :</label><br>
+    <input type="password"
+           id="passwordField"
+           pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*${7,}"
+           title="must have 8 digit UpperCase, LowerCase and Number "
+           required>
+        </td>
+    </tr>
+    <tr>
+        <td  class="textbox">
+            <label style="color:red">*</label><label for="Dob">date of birth : </label><br>
+            <input type="date"
+            id="Dob"
+            required>
+        </td>
+    </tr>
+    <tr>
+        <td  class="textbox">
+            <label style="color:red">*</label><label for="phoneNumberField">Phone number :</label><br>
+            <input type="text"
+                   id="phoneNumberField"
+                   pattern="[6789][0-9]{9}"
+                   title="Enter a valid 10 digit number"
+                   required>
+        </td>
+    </tr>
+    <tr>
+        <td  class="textbox">
+            <label style="color:red">*</label><label for="gender">gender : </label><br>
+            <select id="gender" required>
+                <option value="male">male</option>
+                <option vaue="female">female</option>
+                <option value="preferNotToSay">prefer not to say</option>
+            </select>
+        </td>
+    </tr>
+    <tr>
+        <td  class="textbox">
+    <input type="submit"
+           value="register"
+           id="registerButton">
+        </td>
+    </tr>
+
+</table>
+    </fieldset>
+</form>
+</body>
+</html>
