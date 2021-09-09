@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width , initial-scale=1.0  ">
+    <title>form</title>
+    <link rel="stylesheet" href="basic_form.css">
+</head>
+<body class="background-color-corn-field">
+<form action="ShowHide/ShowHide.html" name="form" method="post" >
+
+    <fieldset class="align-center display-inline-block position-absolute padding-left-60 padding-right-80 rounded-border">
+        <legend class="margin-bottom-10">Registration</legend>
+
+        <label for="firstNameField" >First name : <span class="color-red">*</span></label><br>
+    <input type="text"
+           id="firstNameField"
+           class="margin-bottom-15 margin-top-5 width-200"
+           pattern="[A-Za-z]{2,}"
+           title="only characters allowed"
+           required><br>
+
+            <label for= "lastNameField">Last name : <span class="color-red">*</span></label><br>
+    <input type="text"
+           id="lastNameField"
+           class="margin-bottom-15 margin-top-5 width-200"
+           pattern="[A-Za-z]{2,}"
+           title="only characters allowed"
+           required ><br>
+
+            <label for="userNameField">User name : <span class="color-red">*</span></label><br>
+    <input type="text"
+           id="userNameField"
+           class="margin-bottom-15 margin-top-5 width-200"
+           pattern="[A-Za-z0-9]{2,}"
+           title="only characters allowed"
+           required ><br>
+
+            <label for="passwordField">Password : <span class="color-red">*</span></label><br>
+    <input type="password"
+           id="passwordField"
+           class="margin-bottom-15 margin-top-5 width-200"
+           pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?!.*\s).*${7,}"
+           title="must have 8 digit UpperCase, LowerCase and Number "
+           required><br>
+
+            <label for="Dob">date of birth : <span class="color-red">*</span></label><br>
+            <input type="date"
+                   class="margin-bottom-15 margin-top-5 width-200"
+                   id="Dob"
+                   required><br>
+
+            <label for="email">email : <span class="color-red">*</span></label><br>
+            <input type="email"
+                   id="email"
+                   class="margin-bottom-15 margin-top-5 width-200"
+                   pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$"
+                   title="please enter a valid email id"
+                   required><br>
+
+            <label for="phoneNumberField">Phone number : <span class="color-red">*</span></label><br>
+            <input type="text"
+                   id="phoneNumberField"
+                   class="margin-bottom-15 margin-top-5 width-200"
+                   pattern="[6789][0-9]{9}"
+                   title="Enter a valid 10 digit number"
+                   required><br>
+
+            <label for="gender">gender : <span class="color-red">*</span></label><br>
+            <select id="gender"  class="margin-bottom-15 margin-top-5 width-210"    required>
+                <option value="male">male</option>
+                <option vaue="female">female</option>
+                <option value="preferNotToSay">prefer not to say</option>
+            </select><br>
+
+    <input type="submit"
+           value="register"
+           class="margin-top-5 margin-bottom-10 margin-left-30 padding-right-left-30"
+           id="registerButton" >
+    </fieldset>
+</form>
+</body>
+</html>
