@@ -1,12 +1,12 @@
 $(document).ready(function(){
 
-    var isFirstNameCorrect=false;
-    var isLastNameCorrect=false;
-    var isEmailIdtNameCorrect=false;
-    var isUserNameCorrect=false;
-    var isPasswordCorrect=false;
-    var isConfirmCorrect=false;
-    var isPhoneNumberCorrect=false;
+    var isFirstNameCorrect;
+    var isLastNameCorrect;
+    var isEmailIdCorrect;
+    var isUserNameCorrect;
+    var isPasswordCorrect;
+    var isConfirmCorrect;
+    var isPhoneNumberCorrect;
 
 
     $("#firstNameTextField").focusout(function(){
@@ -17,10 +17,12 @@ $(document).ready(function(){
             $("#firstNameError").show();
             $("#firstNameError").html("only characters allowed or no spaces allowed");
             $("#firstNameTextField").css("border-bottom","2px solid red");
+            isFirstNameCorrect=false;
         }else if(firstName.length<3){
             $("#firstNameError").show();
             $("#firstNameError").html("name must be greater than 2 digit");
             $("#firstNameTextField").css("border-bottom","2px solid red");
+            isFirstNameCorrect=false;
         }else {
             $("#firstNameError").hide();
             $("#firstNameTextField").css("border-bottom","2px solid green");
@@ -36,10 +38,12 @@ $(document).ready(function(){
             $("#lastNameError").show();
             $("#lastNameError").html("only characters allowed");
             $("#lastNameTextField").css("border-bottom","2px solid red");
+            isLastNameCorrect=false;
         }else if(firstName.length<3){
             $("#lastNameError").show();
             $("#lastNameError").html("name must be greater than 2 digit");
             $("#lastNameTextField").css("border-bottom","2px solid red");
+            isLastNameCorrect=false;
         }else {
             $("#lastNameError").hide();
             $("#lastNameTextField").css("border-bottom","2px solid green");
@@ -55,10 +59,11 @@ $(document).ready(function(){
             $("#emailIdError").show();
             $("#emailIdError").html("enter a vaild email id");
             $("#emailIdTextField").css("border-bottom","2px solid red");
+            isEmailIdCorrect=false;
         }else {
             $("#emailIdError").hide();
             $("#emailIdTextField").css("border-bottom","2px solid green");
-            isEmailIdtNameCorrect=true;
+            isEmailIdCorrect=true;
         }
     });
 
@@ -69,6 +74,7 @@ $(document).ready(function(){
             $("#userNameError").show();
             $("#userNameError").html("user name must be greater than 2 digit");
             $("#userNameTextField").css("border-bottom","2px solid red");
+            isUserNameCorrect=false;
         }else {
             $("#userNameError").hide();
             $("#userNameTextField").css("border-bottom","2px solid green");
@@ -83,6 +89,7 @@ $(document).ready(function(){
             $("#passwordError").show();
             $("#passwordError").html("password must be greater than 8 digit");
             $("#passwordTextField").css("border-bottom","2px solid red");
+            isPasswordCorrect=false;
         }else {
             $("#passwordError").hide();
             $("#passwordTextField").css("border-bottom","2px solid green");
@@ -98,6 +105,7 @@ $(document).ready(function(){
             $("#confirmPasswordError").show();
             $("#confirmPasswordError").html("confirm password and password are not match");
             $("#confirmPasswordTextField").css("border-bottom","2px solid red");
+            isConfirmCorrect=false;
         }else {
             $("#confirmPasswordError").hide();
             $("#confirmPasswordTextField").css("border-bottom","2px solid green");
@@ -107,12 +115,13 @@ $(document).ready(function(){
 
     $("#phoneNumberTextField").focusout(function(){
         var phoneNumber=$("#phoneNumberTextField").val();
-        var phoneNoPattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;;
+        var phoneNoPattern = /^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/;
 
          if(!phoneNoPattern.test(phoneNumber)){
             $("#phoneNumberError").show();
             $("#phoneNumberError").html("enter a valid phone number");
             $("#phoneNumberTextField").css("border-bottom","2px solid red");
+            isPasswordCorrect=false;
         }else {
             $("#phoneNumberError").hide();
             $("#phoneNumberTextField").css("border-bottom","2px solid green");
@@ -121,7 +130,7 @@ $(document).ready(function(){
     });
     $("#registerButton").click(function(){
 
-        if(isFirstNameCorrect==true && isLastNameCorrect==true &&isEmailIdtNameCorrect==true
+        if(isFirstNameCorrect==true && isLastNameCorrect==true && isEmailIdCorrect==true
             && isUserNameCorrect==true && isPasswordCorrect==true && isConfirmCorrect==true && isPhoneNumberCorrect==true){
             alert("Registration Successfull");
         }else{
