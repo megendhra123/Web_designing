@@ -1,0 +1,25 @@
+.no-decr{ text-decoration:none; }
+.bor-2{border: thin solid #FFAE01ED; }
+.display-inline{ display:inline-block;}
+.lig-ylw-color{ color:#FFAE01;}
+.txt-align-cen{ text-align:center;}
+.txt-align-left{text-align:left;}
+.txt-align-right{text-align:right;}
+.txt-align-jus{text-align:justify;}
+.txt-styl-mono{ font-family:Glory,Monospace;}
+.fnt-size-26{font-size:26pt;}
+.fnt-size-18{font-size:18pt;}
+.lttr-space{letter-spacing:2px;}
+.wrd-space{word-spacing:2px;}
+.line-height{line-height:28px;}
+.float-right{float:right;}
+.float-left{float:left;}
+.width-400{width:1000px;}
+.width-280{width:280px;}
+.heigth-190{height:190px;}
+.txt-trans{text-transform:uppercase}
+.pad-lft-rgt{padding:0px 40px;}
+.bor-radi-20{border-radius:20px;}
+.txt-sdw{text-shadow:6px 6px 6px #EBAC45;}
+.ylw-color{color:#FC9C00;}
+.txt-decor-underline{text-decoration:underline;}
