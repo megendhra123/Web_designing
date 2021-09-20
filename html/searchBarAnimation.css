@@ -1,0 +1,10 @@
+input[type=text]{
+margin-left:40px;
+ width:130px;
+ padding:10px;
+ font-size:14pt;
+ transition: 1.4s;
+}
+input[type=text]:focus{
+ width:70%;
+}

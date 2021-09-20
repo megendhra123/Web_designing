@@ -1,0 +1,7 @@
+body{
+counter-reset:count;
+}
+h2::before{
+ counter-increment:count;
+ content: "Count " counter(count) " : ";
+}

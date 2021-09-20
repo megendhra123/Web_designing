@@ -1,0 +1,32 @@
+.border-style-1{
+  border:10px solid transparent;
+  padding:20px;
+  border-image: url(../files/border.png) 20 round;
+  text-align:center;
+  display:inline-block;
+  width:750px;
+}
+.border-style-2{
+  border:10px solid transparent;
+  padding:20px;
+  border-image: url(../files/border.png) 20% round;
+  text-align:center;
+  display:inline-block;
+  width:750px;
+}
+.border-style-3{
+  border:10px solid transparent;
+  padding:20px;
+  border-image: url(../files/border.png) 50% round;
+  text-align:center;
+  display:inline-block;
+  width:750px;
+}
+.border-style-4{
+  border:10px solid transparent;
+  padding:20px;
+  border-image: url(../files/border.png) 50 round;
+  text-align:center;
+  display:inline-block;
+  width:750px;
+}
