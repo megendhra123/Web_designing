@@ -1,0 +1,23 @@
+.text-effect-1{
+  width:200px;
+  white-space: nowrap;
+  border:1px solid black;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+.text-effect-1:hover{
+  white-space:normal;
+  overflow:visibile;
+}
+.text-effect-2{
+  width:200px;
+  white-space: nowrap;
+  border:1px solid black;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  transition:1s;
+}
+.text-effect-2:hover{
+  width:600px;
+  overflow:visibile;
+}

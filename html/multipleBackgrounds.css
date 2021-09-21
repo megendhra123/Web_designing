@@ -1,0 +1,12 @@
+.background-paper{
+  background-image:url(../files/icon1.png), url(../files/icon3.png) , url(../files/paper_bac.jpg) ;
+  background-position:center center, right bottom, left top;
+  background-repeat:no-repeat, no-repeat, repeat;
+  background-size:350px, 250px, auto;
+}
+.div-size{
+   width:1280px;
+   height:580px;
+   margin:auto;
+   padding:10px 30px;
+}

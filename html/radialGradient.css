@@ -1,0 +1,23 @@
+.div-style{
+ width:350px;
+ height:300px;
+ border:4px solid black;
+ float:left;
+ margin-right:10px;
+}
+.text-center{
+  text-align:center;
+  padding-top:120px;
+}
+.radial-style-1{
+  background-image:radial-gradient(#ff1a1a,#ffcc33,#ccd9ff);
+}
+.radial-style-2{
+  background-image:radial-gradient(circle,#ff1a1a,#ffcc33,#ccd9ff);
+}
+.radial-style-3{
+  background-image:repeating-radial-gradient(#ff1a1a 5%,#ffcc33 10%,#ccd9ff 15%);
+}
+.margin-left{
+  margin-left:130px;
+}

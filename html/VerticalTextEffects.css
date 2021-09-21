@@ -1,0 +1,18 @@
+.vertical-text-1{
+ writing-mode:vertical-rl;
+}
+.vertical-text-2{
+ writing-mode:vertical-rl;
+ text-orientation:upright;
+}
+.div-style{
+ font-size:21pt;
+ float:left;
+ padding:20px 30px 20px 0px;
+ border-top:10px solid orange;
+ margin-right:15px;
+ background:#ffc299;
+}
+.text-color-orange{
+ color:orange;
+}

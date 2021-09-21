@@ -1,0 +1,20 @@
+.div-size{
+  width:90%;
+  height:250px;
+  border:2px solid black;
+  margin:30px auto;
+  text-align:center;
+}
+
+#linear-style-1{
+  background-image: linear-gradient( #ff471a, #ffd11a);
+}
+#linear-style-2{
+  background-image: linear-gradient(to right, #0073e6, #99ffe6);
+}
+#linear-style-3{
+  background-image: linear-gradient(to bottom right, #cce6ff, #001a33);
+}
+#linear-style-4{
+  background-image: linear-gradient(to right, #ff3333, #ffff33,#a6ff4d,#66ffcc,#4d4dff,#db4dff,#ff99cc);
+}
