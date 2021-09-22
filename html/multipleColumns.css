@@ -1,0 +1,11 @@
+.column-3{
+ column-count:3;
+ column-rule:2px solid black;
+}
+.col-span-all{
+  column-span:all;
+}
+.pad-10-50{
+text-align:justify;
+padding:10px 50px;
+}

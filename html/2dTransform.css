@@ -27,3 +27,13 @@
   transform:rotate(20deg);
   text-align:center;
 }
+.div-style-4{
+  position:absolute;
+  top:56px;
+  width:300px;
+  height:300px;
+  background-color:orange;
+  opacity:0.6;
+  transform:scale(1.3,1.1);
+  text-align:center;
+}
