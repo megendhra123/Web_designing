@@ -1,0 +1,24 @@
+.fade-out-box{
+  width:150px;
+  height:150px;
+  float:left;
+  margin-left:10px;
+  color:white;
+  text-align:center;
+  border-radius:15px;
+}
+.btn-style{
+ margin-left:10px;
+ margin-top:10px;
+ background-color:black;
+ font-size:14pt;
+ padding:8px 15px;
+ color:white;
+ border:0;
+}
+.clr-left{ clear:left; }
+.bac-color-red{ background-color:red; }
+.bac-color-green{  background-color:green; }
+.bac-color-lightblue{ background-color:lightblue; }
+.bac-color-indigo{ background-color:indigo; }
+.bac-color-orange{ background-color:orange; }

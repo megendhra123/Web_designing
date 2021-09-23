@@ -1,0 +1,13 @@
+.head{
+   background-color:lightgreen;
+   border:1px solid black;
+   color:white;
+   text-align:center;
+}
+.show{
+    background-color:lightgreen;
+    color:white;
+    text-align:center;
+    padding:40px;
+    font-size:14pt;
+}

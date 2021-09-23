@@ -1,0 +1,26 @@
+.div-style{
+  float:left;
+  border:2px solid limegreen;
+  width:400px;
+  height:400px;
+}
+.div-box{
+  position:absolute;
+  background-color:limegreen;
+  width:100px;
+  height:100px;
+  margin:20px;
+}
+#display-para{
+   display:none;
+   font-size:26pt;
+   color:white;
+   }
+.btn-style{
+  background-color:limegreen;
+  border:0;
+  padding:12px 22px;
+  font-size:14pt;
+  color:white;
+  margin:7px;
+}
