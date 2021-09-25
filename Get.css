@@ -1,0 +1,23 @@
+.div-style{
+  background-color:grey;
+  width:90%;
+  height:60px;
+  margin: auto;
+  text-align:center;
+}
+.input-style{
+   margin-top:15px;
+   padding:5px 20px;
+   border:2px solid black;
+}
+.display-para{
+  display:none;
+  height:100px;
+  padding-top:70px;
+  border-top:2px solid black;
+  font-size:26pt;
+  color:white;
+}
+.margin-top{
+   magin-top:20px;
+}

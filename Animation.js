@@ -3,7 +3,7 @@ $(document).ready(function(){
      $("#box").animate({ left : '250px' });
   });
   $("#ani-big").click(function(){
-     $("#box").animate({
+      $("#box").animate({
           left : '160px',
           width: '200px',
           height: '200px',
@@ -11,8 +11,8 @@ $(document).ready(function(){
           });
      });
   $("#ani-width-tog").click(function(){
-     $("#box").animate({ height : 'toggle' });
-     });
+            $("#box").animate({ height : 'toggle' });
+       });
   $("#ani-queue").click(function(){
             $("#box").animate({ height: '250px', opacity: '0.5'});
             $("#box").animate({ width: '250px', opacity: '1'});
@@ -22,5 +22,14 @@ $(document).ready(function(){
   $("#ani-text").click(function(){
             $("#box").animate({ width: '200px', height: '80px'},1200);
             $("#display-para").show(2000);
+       });
+  $("#ani-start").click(function(){
+            $("#box").animate({ width: '350px', opacity: '0.6'},3000);
+      });
+  $("#ani-stop").click(function(){
+            $("#box").stop();
+     });
+  $("#ani-chain").click(function(){
+           $("#box").slideUp(1000).slideDown(1000);
   });
   });
